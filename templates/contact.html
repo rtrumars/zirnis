@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="{{ url_for('static',filename='css/contacts.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/menu.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/core.css') }}">
+ <link rel="stylesheet" href="{{ url_for('static',filename='css/head.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>Contacts</title>
+</head>
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+<div class="header">
+  <a href="{{ url_for('home') }}" class="logo">Bioloģija</a>
+  </div>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="{{ url_for('home') }}">Sākums</a></li>
+            <li><a href="{{ url_for('table') }}">Tabula</a></li>
+            <li><a href="{{ url_for('contact') }}">Kontakti</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="about-section">
+  <h1>Mūsu Kontakti</h1>
+  <p>Mēs esam Zentas Mauriņas Grobiņas novada vidusskolas studenti.</p>
+  <p>Šī mājaslapa ir radīta, lai spētu veidot savus projektus vienotā datnē.</p>
+</div>
+<br>
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i.imgur.com/ufCQoj3.jpg" alt="Roberts" style="width:60%">
+      <div class="container">
+        <h2>Roberts Trumars</h2>
+        <p class="title">Administrātors</p>
+        <p>Es salauzu roku, braucu ar Passat</p>
+        <p>roberts.trumars@grobinasskola.lv</p>
+        <p><button class="button">Rakstīt!</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i.imgur.com/E15SHO6.jpg" alt="Valters" style="float:center;width:70%">
+      <div class="container">
+        <h2>Valters Hūns</h2>
+        <p class="title">Īpašnieks & Administrātors</p>
+        <p>Es kačā būdu 3 reiz nedelja</p>
+        <p>valters.huns@grobinasskola.lv</p>
+        <p><button class="button">Rakstīt!</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg?w=600&h=1200" alt="John" style="width:83%">
+      <div class="container">
+        <h2>Pifiņa</h2>
+        <p class="title">Talismans</p>
+        <p class="title"> </p>
+        <p>Mūsu komandas veiksmes talismans</p>
+        <p class="title">  
+        <p><button class="button">Paglaudīt</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
