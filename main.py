@@ -1,6 +1,6 @@
 from flask import Flask, render_template,request
 
-app = Flask(__name__)
+app = Flask('app')
 
 @app.route('/')
 def home():
@@ -15,5 +15,5 @@ def table():
 def contact():
   return render_template('contact.html')
 
-
-app.run(threaded=True, port=8020)
+if __name__ == "__main__":
+    app.run(threaded=True, port=5000)
