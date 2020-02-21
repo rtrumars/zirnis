@@ -28,27 +28,11 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">Profile</a>
-            <a href="#" class="nav-item nav-link">Messages</a>
+            <a href="{{ url_for('home') }}" class="nav-item nav-link active">Sākums</a>
+            <a href="{{ url_for('table') }}" class="nav-item nav-link">Tabula</a>
+            <a href="{{ url_for('contact') }}" class="nav-item nav-link">Kontakti</a>
         </div>
     </div>
-    <div class="menu-wrap" >
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="{{ url_for('home') }}">Sākums</a></li>
-            <li><a href="{{ url_for('table') }}">Tabula</a></li>
-            <li><a href="{{ url_for('contact') }}">Kontakti</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
 </nav>
 
 
