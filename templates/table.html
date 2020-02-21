@@ -2,6 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="{{ url_for('static',filename='css/menu.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/icon.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	 crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,7 +16,20 @@
 <body>
 
 
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="{{ url_for('home') }}" class="nav-item nav-link active">Sākums</a>
+            <a href="{{ url_for('table') }}" class="nav-item nav-link">Tabula</a>
+            <a href="{{ url_for('contact') }}" class="nav-item nav-link">Kontakti</a>
+        </div>
+    </div>
+    <a href="#" class="fa fa-facebook"></a>
+</nav>
 
 
 </br>
