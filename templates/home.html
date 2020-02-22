@@ -8,9 +8,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/contacts.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='css/icon.css') }}">
-    <script src="{{ url_for('static',filename='js/javascript.js') }}"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
@@ -37,38 +35,6 @@
             <a href="{{ url_for('lapa') }}" class="nav-item nav-link">Lapa</a>
             <a href="{{ url_for('contact') }}" class="nav-item nav-link">Kontakti</a>
         </div>
-
-
-        <button class="nav-item nav-link" onclick="document.getElementById('id01').style.display='block'" style="width:50%;" text-align="right">Login</button>
-
-<div id="id01" class="modal" style="width:50%;">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
     </div>
 </nav>
       
