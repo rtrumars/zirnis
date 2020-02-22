@@ -9,14 +9,10 @@ def home():
 @app.route('/lapa')
 def lapa():
   return render_template('lapa.html')
+
 @app.route('/contact')
 def contact():
   return render_template('contact.html')
-
-  @app.route('/')
-def index_lapa():
-  return render_template('chats.html')
-
 
 @app.route('/health')
 def health_check():
