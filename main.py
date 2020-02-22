@@ -1,5 +1,4 @@
-from flask import Flask, json, jsonify, render_template, request
-import chats
+from flask import Flask, render_template, request
 
 app = Flask('app')
 
