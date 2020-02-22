@@ -9,7 +9,7 @@ input[type=text], input[type=password] {
   }
   
   /* Set a style for all buttons */
-  button {
+  .poga {
     background-color: #C0C0C0;
     color: white;
     padding: 14px 20px;
