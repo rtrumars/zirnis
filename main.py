@@ -10,7 +10,7 @@ def home():
 def lapa():
   return render_template('lapa.html')
 
-@app.route('/contact')
+@app.route('/contact/a')
 def contact():
   return render_template('contact.html')
 
