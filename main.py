@@ -6,6 +6,11 @@ app = Flask('app')
 @app.route('/')
 def home():
   return render_template('home.html')
+
+@app.route('/index')
+def indx_lapa():
+  return render_template('chats.html')
+
 @app.route('/lapa')
 def lapa():
   return render_template('lapa.html')
