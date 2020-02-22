@@ -15,16 +15,16 @@ def contact():
   return render_template('contact.html')
 
 @app.route('/eng')
-def home():
-  return render_template('home-eng.html')
+def homeeng():
+  return render_template('homeeng.html')
 
 @app.route('/lapa/eng')
-def lapa():
-  return render_template('lapa-eng.html')
+def lapaeng():
+  return render_template('lapaeng.html')
 
 @app.route('/about/eng')
-def contact():
-  return render_template('contact-eng.html')
+def contacteng():
+  return render_template('contacteng.html')
 
   
 
