@@ -1,4 +1,5 @@
-from flask import Flask, render_template,request
+from flask import Flask, json, jsonify, render_template, request
+import chats
 
 app = Flask('app')
 
@@ -11,6 +12,29 @@ def lapa():
 @app.route('/contact')
 def contact():
   return render_template('contact.html')
+
+  @app.route('/')
+def index_lapa():
+  return render_template('chats.html')
+
+
+@app.route('/health')
+def health_check():
+  return "OK"
+
+
+@app.route('/chats/lasi')
+def ielasit_chatu():
+  return chats.lasi()
+
+
+@app.route('/chats/suuti', methods=['POST'])
+def suutiit_zinju():
+  dati = request.json
+  
+  chats.pieraksti_zinju(dati)
+
+  return chats.lasi()
   
 
 if __name__ == "__main__":
