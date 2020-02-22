@@ -1,15 +1,8 @@
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
