@@ -6,6 +6,18 @@ app = Flask('app')
 def home():
   return render_template('home.html')
 
+@app.route('/eng')
+def homeeng():
+  return render_template('home-eng.html')
+
+@app.route('/lapa/eng')
+def lapaeng():
+  return render_template('lapa-eng.html')
+
+@app.route('/about/eng')
+def contacteng():
+  return render_template('contact-eng.html')
+
 @app.route('/lapa')
 def lapa():
   return render_template('lapa.html')
