@@ -8,7 +8,7 @@ def home():
   return render_template('home.html')
 
 @app.route('/index')
-def indx_lapa():
+def index_lapa():
   return render_template('chats.html')
 
 @app.route('/lapa')
